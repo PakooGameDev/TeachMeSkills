@@ -1,0 +1,70 @@
+.header {
+  &__container {
+    @include flex-all-sb;
+    padding: 30px 0;
+  }
+
+  &__btn {
+    background-color: var(--accent-color);
+  }
+  .nav {
+    &__list {
+      @include flex-v-center;
+      gap:50px;
+      margin-bottom: 10px;
+    }
+    &__link {
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 20px;
+      letter-spacing: -0.468947px;
+      color: var(--text-color);
+
+    }
+    .active {
+      position: relative;
+      display: block;
+      &::before {
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: var(--blue-color);
+
+      }
+    }
+  }
+  .burger {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 15px;
+    height: 26px;
+    width: 29px;
+    &, &:hover {
+      color: #000;
+    }
+    span {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      border-radius: 2px;
+      background-color: #FF7143;
+      &:nth-child(1) {
+        transform: translate(0, -10px);
+      }
+      &:nth-child(3) {
+        transform: translate(0, 10px);
+      }
+    }
+  }
+}
+
+
+
+
+
+

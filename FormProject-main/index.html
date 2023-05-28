@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/styles.css">
+    <title>formProject</title>
+</head>
+<body>
+    <div id='wrapper'>
+        <form action='' class='form'>
+            <section class='payment'>
+                <fieldset class="payment__fieldset">
+                    <legend class="payment__fieldset-legend">Payment details</legend>
+                    <div class='payment__field field datalist-field'>
+                        <input class="payment__selector selector" type="text" placeholder="Name On Card"  name="nameOnCard" id="nameOnCard" list="cardNames" required>
+                        <div class="dropdown-arrow"></div>
+                        <datalist id="cardNames">
+                            <option>Name</option>
+                            <option>SecondName</option>
+                            <option>ThirdName</option>
+                        </datalist>
+                    </div>
+                    <div class="payment__card card-data">
+                        <div class='field required'>
+                            <input placeholder="Card number" type="tel"  inputmode="numeric" class='text-input' id='name' name='name' autocomplete="cc-number" required type='tel' maxlength="19" pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}">
+                        </div>
+                        <div class="card-data">
+                            <div class='field required'>
+                                <input placeholder="Expiry date" class='text-input' type="date" id="expiry" name="expiry" min="2018-01-01" max="2028-01-01" required type='data'>
+                            </div>
+                            <div class='field required'>
+                                <input placeholder="Card Number" type="text" class='text-input' id='cvs' name='cvs' required type='number' required minlength="3" maxlength="3">
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </section>
+            <section class='billing'>
+                <fieldset class="billing__fieldset">
+                    <legend class="billing__fieldset-legend">Billing adress</legend>
+                    <div class="billing__card card-data">
+                        <div class='field required'>
+                            <input placeholder="Adress" class='text-input' id='adress' name='adress' required minlength="6" maxlength="21">
+                        </div>
+                        <div class='field required'>
+                            <input placeholder="Card Number" type="text" class='text-input' id='zip' name='zip' required type='number'required minlength="5" maxlength="5">
+                        </div>
+                    </div>
+                    <div class="billing__card card-data">
+                        <div class='field datalist-field'>
+                            <select placeholder="State of province" class="billing__selector selector" id="card" name="usercard" required>
+                                <option value="visa">Visa</option>
+                                <option value="ms">MasterCard</option>
+                                <option value="amex">AmericanExpress</option>
+                            </select>
+                            <div class="dropdown-arrow"></div>
+                        </div>
+                        <div class='field required'>
+                            <input placeholder="City" type="text" class='text-input' id='city' name='city' required type='text' required minlength="6" maxlength="21">
+                        </div>
+                    </div>
+                </fieldset>
+            </section>
+            <div class="submit__button">
+                <button class='form__button button' type="submit">PAY $888</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

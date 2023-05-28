@@ -1,0 +1,13 @@
+.features {
+  &__container {
+    padding: 35px 0;
+    @include flex-all-sb;
+    gap: 120px;
+  }
+  &__img {
+    max-width: 564px;
+    img {
+      @include bg-cover;
+    }
+  }
+}

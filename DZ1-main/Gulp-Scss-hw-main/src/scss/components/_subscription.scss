@@ -1,0 +1,40 @@
+.subscription {
+  &__container {
+    padding: 125px 0;
+  }
+  &__item {
+    @include flex-all-sb;
+    gap:165px;
+    @include mb(83px);
+    margin-right: 105px;
+  }
+  &__content {
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap:30px;
+    max-width:450px;
+    h2 {
+      font-weight: 700;
+      font-size: 50px;
+      line-height: 57px;
+      letter-spacing: -1.56316px;
+      color: var(--heading-color);
+    }
+    p {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+      letter-spacing: -0.625263px;
+      color: var(--text-color);
+      width: 90%;
+    }
+    a{
+      font-weight: 700;
+      font-size: 17px;
+      line-height: 22px;
+      letter-spacing: -0.531474px;
+      color: var(--blue-color);
+    }
+  }
+}
