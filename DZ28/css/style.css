@@ -1,0 +1,23 @@
+form {
+    width: 500px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.table {
+    width: 500px;
+    margin-bottom: 20px;
+    border: 1px solid #dddddd;
+    margin: 0 auto;
+}
+
+.table td {
+    border: 1px solid #dddddd;
+    padding: 5px;
+    text-align: center;
+
+}
+
+.btn-group {
+    margin-top: 20px;
+}
